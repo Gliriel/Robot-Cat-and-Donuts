@@ -1,30 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
     public float speed = 4f;
-    Im_Master _inputs;
+    Im_Master _input;
+
 
     private void Awake()
     {
-        _inputs = new Im_Master();
+        _input = new Im_Master();
     }
 
-    private void OnEnable()
-    {
-        _inputs.main.Enable();
-    }
     void Start()
     {
         
     }
-
+    void Enable()
+    {
+        _input.main.Enable();
+    }
     void Update()
     {
-        float x = _inputs.main.main_button.ReadValue<float>();
-        transform.position += new Vector3(x, 0, 0) * speed * Time.deltaTime;
+        float x = _input.main.main_button.ReadValue<float>();
+
+        Debug.Log(_input.main.main_button.ReadValue<float>());
+
+        transform.position += new Vector3(x * speed * Time.deltaTime, 0, 0);
+        
     }
 
     void OnCollisionEnter()
