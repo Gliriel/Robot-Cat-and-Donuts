@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 velocity = rb.velocity;
         velocity.x = moveX;
-        rb velocity = velocity;
+        rb.velocity = velocity;
     }
     
 }
