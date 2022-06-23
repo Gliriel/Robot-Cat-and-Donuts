@@ -1,0 +1,56 @@
+{
+    "name": "im_Master",
+    "maps": [
+        {
+            "name": "main",
+            "id": "7b8ecdf4-5179-4d3b-8703-cb227657fdf2",
+            "actions": [
+                {
+                    "name": "main_button",
+                    "type": "Value",
+                    "id": "55b4e41f-99fb-41fb-9193-214099018cdc",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "521f458c-0175-4e28-94e5-e9c62dd60fb7",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "main_button",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "17598339-a804-4be8-986b-dfcbb99b1b34",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "main_button",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "82791ab1-e8ef-45f6-a47e-f5dea6b0823c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "main_button",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
