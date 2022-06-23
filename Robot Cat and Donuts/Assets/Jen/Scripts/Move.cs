@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputManager;
 using UnityEngine;
 
 public class Move : MonoBehaviour
