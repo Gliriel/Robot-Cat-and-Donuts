@@ -11,7 +11,7 @@ public class MarbleMaker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var randNum = Random.Range(5, 15); // this will return a number between 0 and 9 
+        var randNum = Random.Range(5, 15); // this will return a number between 5 and 15 
 
         for (var i = 0; i < randNum; i++)
         {

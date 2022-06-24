@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RotateBox : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed = 4;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-    }
+        var keyboard = Keyboard.current;
+        if (keyboard.aKey.IsPressed())
+        {
+            transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
+        }
+        if (keyboard.dKey.IsPressed())
+        {
+            transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+        }
+    }        
 }
