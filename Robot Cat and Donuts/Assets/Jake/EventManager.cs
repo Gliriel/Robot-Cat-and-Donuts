@@ -5,32 +5,24 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
 
-    public static EventManager Current;
+    public static EventManager Instance;
 
     private void Awake()
     {
-        Current = this;
+        Instance = this;
     }
 
     public event Action OnWinConditionMet;
 
     public void WinConditionMet()
     {
-        if (OnWinConditionMet != null)
-        {
-            OnWinConditionMet();
-        }
+        OnWinConditionMet?.Invoke();
     }
 
     public event Action OnTimerEnd;
 
     public void TimerEnd()
     {
-        if (OnTimerEnd != null)
-        {
-            OnTimerEnd();
-        }
+        OnTimerEnd?.Invoke();
     }
-
-    
 }

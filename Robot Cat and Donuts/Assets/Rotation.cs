@@ -22,6 +22,6 @@ public class Rotation : MonoBehaviour
     void Update()
     {
         float x = _inputs.main.main_button.ReadValue<float>();
-        transform.Rotate(new Vector3(0,0,x) * speed * Time.deltaTime );
+        transform.Rotate(new Vector3(0,0,-x) * speed * Time.deltaTime );
     }
 }
