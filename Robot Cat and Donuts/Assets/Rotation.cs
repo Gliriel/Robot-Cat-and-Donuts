@@ -6,6 +6,7 @@ public class Rotation : MonoBehaviour
 {
     public float speed = 4f;
     Im_Master _inputs;
+    
 
     private void Awake()
     {
@@ -27,6 +28,6 @@ public class Rotation : MonoBehaviour
     void Update()
     {
         float x = _inputs.main.main_button.ReadValue<float>();
-        transform.position += new Vector3(x, 0, 0) * speed * Time.deltaTime;
+        transform.Rotate(new Vector3(0,0,x) * speed * Time.deltaTime );
     }
 }
