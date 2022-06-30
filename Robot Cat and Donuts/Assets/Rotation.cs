@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    public float speed = 4f;
-    Im_Master _inputs;
+    public float speed = 100f;
+    private Im_Master _inputs;
     
 
     private void Awake()
@@ -16,12 +16,6 @@ public class Rotation : MonoBehaviour
     private void OnEnable()
     {
         _inputs.main.Enable();
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
     }
 
     // Update is called once per frame
