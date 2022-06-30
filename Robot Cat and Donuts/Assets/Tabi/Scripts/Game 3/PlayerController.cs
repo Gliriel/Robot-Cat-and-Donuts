@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Collided");
             if (collision.collider.CompareTag("Platform"))
             {
-               
+                GetComponent<AudioSource>().Play(); 
                 velocity = rb.velocity;
                 velocity.y = jumpForce;
                 rb.velocity = velocity;
