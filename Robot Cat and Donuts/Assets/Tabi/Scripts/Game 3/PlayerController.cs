@@ -6,7 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
     public Rigidbody2D rb;
+    public int jumpForce = 100;
 
+    
+    private Vector2 velocity;
     private float moveX;
 
     // Start is called before the first frame update
@@ -23,9 +26,26 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 velocity = rb.velocity;
+  
+        
+        velocity = rb.velocity;
         velocity.x = moveX;
         rb.velocity = velocity;
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        if (rb.velocity.y < 0)
+        {
+            Debug.Log("Collided");
+            if (collision.collider.CompareTag("Platform"))
+            {
+               
+                velocity = rb.velocity;
+                velocity.y = jumpForce;
+                rb.velocity = velocity;
+            }
+        }
+    }
 }
