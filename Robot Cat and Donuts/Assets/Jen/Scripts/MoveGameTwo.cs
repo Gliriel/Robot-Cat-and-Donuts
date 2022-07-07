@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class Move : MonoBehaviour
+public class MoveGameTwo : MonoBehaviour
 {
     public float speed = 4f;
     public Im_Master _im_Master;
@@ -18,6 +18,8 @@ public class Move : MonoBehaviour
         _rbody = GetComponent<Rigidbody2D>();
     }
 
+
+
     private void OnEnable()
     {
         _im_Master.Jen.Enable();
@@ -30,23 +32,14 @@ public class Move : MonoBehaviour
         _rbody.velocity = _moveInput * speed;  
     }
 
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Sphere")
-        {
-            Destroy(gameObject);
-        }
-       
-    }
-
     private void FixedUpdate()
     {
-
+        
         if (_moveInput.x > 0 && !facingRight)
         {
             Flip();
         }
-        if (_moveInput.x < 0 && facingRight)
+        if (_moveInput.x <0 && facingRight)
         {
             Flip();
         }
