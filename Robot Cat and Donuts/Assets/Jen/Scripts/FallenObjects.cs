@@ -15,7 +15,7 @@ public class FallenObjects : MonoBehaviour
     void Spawn ()
     {
         GameObject cuke = Instantiate(sphere,new Vector3(Random.Range(-7f,7f),10,0),Quaternion.identity);
-        var randScale = Random.Range(0.5f, 1.2f);
+        var randScale = Random.Range(0.2f, 0.5f);
         cuke.transform.localScale = new Vector2(randScale, randScale);
     }
 
