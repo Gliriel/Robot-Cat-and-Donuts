@@ -6,12 +6,14 @@ public class MarbleMaker : MonoBehaviour
 {
 
     public GameObject carble;
+    public int randNum;
+    public WinLose _winLose;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        var randNum = Random.Range(5, 15); // this will return a number between 5 and 15 
+        randNum = Random.Range(5, 15); // this will return a number between 5 and 15 
 
         for (var i = 0; i < randNum; i++)
         {
@@ -25,6 +27,15 @@ public class MarbleMaker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (randNum == 0)
+        {
+            _winLose.win = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        randNum -= 1;
+        Destroy(collision.gameObject);
     }
 }
