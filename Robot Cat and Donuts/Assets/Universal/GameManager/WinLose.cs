@@ -8,23 +8,9 @@ public class WinLose : MonoBehaviour
 {
     public TextMeshProUGUI winLoseText;
     public GameObject _panel;
-    private bool win;
-    private Timer _timer;
+    public bool win;
+    public Timer _timer;
     
-
-    // Start is called before the first frame update
-    public void Start()
-    {
-        SetWin();
-        _timer = GetComponent<Timer>(); 
-    }
-
-    // Update is called once per frame
-    public void Update()
-    {
-        CheckWin();
-    }
-
     public void Win()
     {
         _panel.SetActive(enabled);
@@ -39,17 +25,13 @@ public class WinLose : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    public virtual void SetWin()
+    public virtual void SetWin(bool _bool)
     {
-        win = false;
+        win = _bool;
     }
 
     public virtual void CheckWin()
     {
-        if (win != false)
-        {
-            Win();
-        }
         if (_timer.stopTimer == true && win != false)
         {
             Win();

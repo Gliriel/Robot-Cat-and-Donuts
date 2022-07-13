@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Slider timer;
+    public float gameLength;
     public float gameTime;
     [HeaderAttribute("Animation Curve")]
     public AnimationCurve animationCurve;
@@ -16,15 +17,17 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         stopTimer = false;
+        gameTime = gameLength;
+        graphValue = gameLength;
         timer.maxValue = gameTime;
         timer.value = graphValue;
     }
 
     private void Update()
     {
-        float time = gameTime - Time.time;
+        gameTime -= Time.deltaTime;
 
-        if (time <= 0)
+        if (gameTime <= 0)
         {
             stopTimer = true;
         }
@@ -37,6 +40,6 @@ public class Timer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        graphValue = animationCurve.Evaluate(Time.time);
+        graphValue = animationCurve.Evaluate(gameTime);
     }
 }
