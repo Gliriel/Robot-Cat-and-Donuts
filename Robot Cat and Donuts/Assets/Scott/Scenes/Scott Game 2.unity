@@ -229,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[1].time
-      value: 2.2371857
+      value: 2.3371856
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[2].time
@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[1].value
-      value: 0.6240739
+      value: 0.5533192
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[2].value
