@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class JumpShop : MonoBehaviour
 {
@@ -10,21 +11,27 @@ public class JumpShop : MonoBehaviour
 
     void Start()
     {
-
+        
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+
+        var keyboard = Keyboard.current;
+
+        
+        if (keyboard.aKey.IsPressed())
         {
         CatCube.AddForce(Vector3.up * forceAmount, ForceMode.Impulse);
         
         }
 
-       if (Input.GetKey(KeyCode.D))
+       if (keyboard.dKey.IsPressed())
         {
         CatCube.AddForce(Vector3.down * forceAmount, ForceMode.Impulse);
         
         }
+
+        
     }
 }
