@@ -11,7 +11,7 @@ public class EventManager : MonoBehaviour
     {
         Instance = this;
     }
-
+    
     public event Action OnWinConditionMet;
 
     public void WinConditionMet()
