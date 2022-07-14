@@ -14,7 +14,7 @@ public class FallenNumber : MonoBehaviour
 
     void Spawn ()
     {
-        Instantiate( numbers[Random.Range(0, numbers.Length)] ,new Vector3(Random.Range(-7f,7f),10,0),Quaternion.identity);
+        Instantiate( numbers[Random.Range(0, numbers.Length)] ,new Vector3(Random.Range(-6f,6f),6,0),Quaternion.identity);
         
     }
 

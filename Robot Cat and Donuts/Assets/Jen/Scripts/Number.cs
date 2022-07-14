@@ -14,7 +14,7 @@ public class Number : MonoBehaviour
             other.gameObject.GetComponent<GameTwoAddValue>().AddValue(value);
             Destroy(this.gameObject);
         }
-        else
+        if (other.gameObject.tag == "Destroyer")
         {
             Destroy(this.gameObject);
         }

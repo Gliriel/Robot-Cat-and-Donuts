@@ -2,20 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyObject : MonoBehaviour
+public class JenGame1WL : WinLose
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        base.SetWin(true);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
-    void OnCollisionEnter2D(Collision2D other)
+    void FixedUpdate()
     {
-        if (other.gameObject.tag == "Destroyer")
+        if (base.win == false)
         {
-            Destroy(this.gameObject);
+            base.Lose();
         }
+        base.CheckWin();
     }
 }

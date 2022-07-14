@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8821750209897253548}
   - component: {fileID: 9190851880731474135}
   - component: {fileID: 3250092032629087311}
-  - component: {fileID: 7467727832506551828}
   - component: {fileID: 7241238026839468686}
+  - component: {fileID: -1200084923225760396}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Sphere
@@ -108,18 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7467727832506551828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3074409333659559782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd4fd740c14893e498a22b92f5f2ed2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &7241238026839468686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,3 +134,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.832939, y: 2.2763786}
   m_EdgeRadius: 0
+--- !u!114 &-1200084923225760396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074409333659559782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4fd740c14893e498a22b92f5f2ed2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

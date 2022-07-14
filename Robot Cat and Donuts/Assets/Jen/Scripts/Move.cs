@@ -11,6 +11,7 @@ public class Move : MonoBehaviour
     public Rigidbody2D _rbody;
     public Vector2 _moveInput;
     public bool facingRight = true;
+    public WinLose winLose;
 
     private void Awake()
     {
@@ -34,7 +35,7 @@ public class Move : MonoBehaviour
     {
         if (other.gameObject.tag == "Sphere")
         {
-            Destroy(gameObject);
+            winLose.win = false;
         }
        
     }
