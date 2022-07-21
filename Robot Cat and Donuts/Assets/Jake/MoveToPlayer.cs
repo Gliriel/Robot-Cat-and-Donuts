@@ -7,7 +7,6 @@ public class MoveToPlayer : MonoBehaviour
 {
     public float speed;
     private Transform target;
-
     private void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();

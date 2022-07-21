@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    
-    //Randomly spawn sprites within the spawn area
     
     public GameObject objectToSpawn;
-    public GameObject spawnArea;
-    public float spawnRate = 1.0f;
-
+    public float spawnRate = 2.0f;
+    
 
     void Start()
     {
-        
+        InvokeRepeating("Spawn", 1f, spawnRate);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Spawn()
     {
-        
+        Instantiate(objectToSpawn, RandomVectorXY() , Quaternion.identity);
+    }
+    
+    Vector3 RandomVectorXY()
+    {
+        Vector3 randomVector = new Vector3(Random.Range(-0.80f, 0.80f), Random.Range(-0.80f, 0.80f), 0);
+        return randomVector;
     }
 }
