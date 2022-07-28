@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Universal/Scenes/Opening_Scene.unity
+    guid: 019c912f42c176541aa1a58335d9ef5f
+  - enabled: 1
+    path: Assets/Jake/Scenes/Jake Game 2.unity
+    guid: 25f26786c1d134ce49dae51025490e91
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: d9fd753d564ca484fadd069c570045d4, type: 2}
