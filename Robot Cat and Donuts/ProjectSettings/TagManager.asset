@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GreenOrb
   - RedOrb
+  - Bird
+  - Cat
   layers:
   - Default
   - TransparentFX
