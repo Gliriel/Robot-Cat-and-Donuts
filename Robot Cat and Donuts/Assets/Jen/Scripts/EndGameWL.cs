@@ -8,6 +8,7 @@ public class EndGameWL : WinLose
     void Start()
     {
         base.SetWin(false);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
