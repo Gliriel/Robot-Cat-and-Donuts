@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallenObjects : MonoBehaviour
 {
-    public float delay = 0.1f;
+    public float delay = 0.08f;
     public GameObject sphere;
 
     void Start()
@@ -14,7 +14,9 @@ public class FallenObjects : MonoBehaviour
 
     void Spawn ()
     {
-        Instantiate(sphere,new Vector3(Random.Range(-6,6),10,0),Quaternion.identity);
+        GameObject cuke = Instantiate(sphere,new Vector3(Random.Range(-6f,6f),7,0),Quaternion.identity);
+        var randScale = Random.Range(0.2f, 0.5f);
+        cuke.transform.localScale = new Vector2(randScale, randScale);
     }
 
 
