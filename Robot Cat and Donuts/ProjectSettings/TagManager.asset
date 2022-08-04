@@ -10,6 +10,11 @@ TagManager:
   - Sphere
   - Destroyer
   - Numbers
+  tags:
+  - Platform
+  - Enemy
+  - Destoyer
+  - Destroyer
   layers:
   - Default
   - TransparentFX
