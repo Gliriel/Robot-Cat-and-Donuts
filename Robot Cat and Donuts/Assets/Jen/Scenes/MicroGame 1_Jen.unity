@@ -210,10 +210,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 331585495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b636f93b4ea124499c5edbe910af461, type: 3}
+  m_Script: {fileID: 11500000, guid: 77428989de263b042b8051e2370d5e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.4
+  delay: 0.08
   sphere: {fileID: 3074409333659559782, guid: d677fbbc616f1b049bb05bfedb262d47, type: 3}
 --- !u!4 &331585497
 Transform:
@@ -644,6 +644,7 @@ MonoBehaviour:
   _panel: {fileID: 1756714372}
   win: 0
   _timer: {fileID: 1123764492}
+  battery: {fileID: 0}
 --- !u!114 &1123764492 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
@@ -929,10 +930,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536451411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f564db7d836253945ab2259f16989d6a, type: 3}
+  m_Script: {fileID: 11500000, guid: e516e41bd926adb4f8abd58555c9a34f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 4
   _rbody: {fileID: 0}
   _moveInput: {x: 0, y: 0}
   facingRight: 1

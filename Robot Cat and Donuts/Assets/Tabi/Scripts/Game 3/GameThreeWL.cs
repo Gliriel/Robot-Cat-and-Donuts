@@ -8,7 +8,8 @@ public class GameThreeWL : WinLose
     void Start()
     {
         base.SetWin(true);
-
+        GameObject go = GameObject.Find("Battery");
+        base.battery = go.GetComponent<Battery>();
         Time.timeScale = 1f;
 
     }

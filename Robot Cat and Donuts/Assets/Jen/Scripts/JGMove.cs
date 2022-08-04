@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class Move : MonoBehaviour
+public class JGMove : MonoBehaviour
 {
     public float speed = 4f;
     public Im_Master _im_Master;

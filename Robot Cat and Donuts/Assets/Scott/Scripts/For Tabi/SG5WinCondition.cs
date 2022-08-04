@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TG3WinCondition : WinLose
+public class SG5WinCondition : WinLose
 {
 
     public TG3RandomImage TG3RI;

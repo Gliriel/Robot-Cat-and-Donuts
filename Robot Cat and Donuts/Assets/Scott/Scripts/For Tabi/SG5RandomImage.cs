@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TG3RandomImage : MonoBehaviour
+public class SG5RandomImage : MonoBehaviour
 {
     public Image _imageB;
     public Sprite[] imageBs;

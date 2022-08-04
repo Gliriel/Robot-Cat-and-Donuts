@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
-public class TG3ScrollImage : MonoBehaviour
+public class SG5ScrollImage : MonoBehaviour
 {
     public Image _imageA;
     public Sprite[] imageAs;

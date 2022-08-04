@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FallenObjects : MonoBehaviour
+public class FallenObjectsR2 : MonoBehaviour
 {
     public float delay = 0.08f;
     public GameObject sphere;
