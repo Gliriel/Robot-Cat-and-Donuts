@@ -8,8 +8,7 @@ public class RotateAxisZ : MonoBehaviour
     public int directionValue;
     void Start()
     { 
-        RotateSpeed = Random.Range(0.1f, 0.3f);
-        RotateSpeed = Mathf.Round(RotateSpeed * 10.0f) * 0.1f;
+        RotateSpeed = Random.Range(0.1f, 0.25f);
         directionValue = Random.Range(0, 2);
     }
 

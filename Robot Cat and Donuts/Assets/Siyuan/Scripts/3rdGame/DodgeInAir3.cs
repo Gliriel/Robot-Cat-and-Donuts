@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DodgeInAir : MonoBehaviour
+public class DodgeInAir3 : MonoBehaviour
 {
     public Rigidbody CatCube;
-    
-    public float forceAmount = 10;
+    public float DodgeSpeed = 0.05f;
+
     void Start()
     {
 
@@ -21,14 +21,14 @@ public class DodgeInAir : MonoBehaviour
 
         if (keyboard.aKey.IsPressed())
         {
-            CatCube.AddForce(Vector3.left * forceAmount, ForceMode.Impulse);
+            transform.Translate(Vector3.right * DodgeSpeed);
 
             this.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
 
         if (keyboard.dKey.IsPressed())
         {
-            CatCube.AddForce(Vector3.right * forceAmount, ForceMode.Impulse);
+            transform.Translate(Vector3.right * DodgeSpeed);
             this.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 

@@ -6,10 +6,10 @@ public class UpwardSpeed : MonoBehaviour
 {
     public float speed = 2;
     public Rigidbody CatCube;
-    public float forceAmount = 10;
+    //public float forceAmount = 10;
     void Start()
     {
-        CatCube.AddForce(Vector3.right * forceAmount, ForceMode.Impulse);
+        //CatCube.AddForce(Vector3.right * forceAmount, ForceMode.Impulse);
 
     }
 

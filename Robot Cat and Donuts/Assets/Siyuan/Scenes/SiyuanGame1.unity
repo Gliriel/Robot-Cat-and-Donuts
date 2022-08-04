@@ -286,7 +286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208555704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.95, y: 11.89, z: -19.31}
+  m_LocalPosition: {x: -2.95, y: 11.48, z: -19.31}
   m_LocalScale: {x: 1, y: 0.74732, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -532,6 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CatCube: {fileID: 479490096}
+  DodgeSpeed: 0.1
   forceAmount: 0.07
 --- !u!114 &479490103
 MonoBehaviour:
@@ -2744,7 +2745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096196200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.84, y: 11.89, z: -19.31}
+  m_LocalPosition: {x: 1.84, y: 12.22, z: -19.31}
   m_LocalScale: {x: 1, y: 0.74732, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
