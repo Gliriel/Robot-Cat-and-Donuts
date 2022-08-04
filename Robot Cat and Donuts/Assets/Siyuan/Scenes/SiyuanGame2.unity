@@ -2408,7 +2408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CatCube: {fileID: 1783565882}
-  forceAmount: 0.05
+  forceAmount: 0.065
 --- !u!54 &1783565882
 Rigidbody:
   m_ObjectHideFlags: 0

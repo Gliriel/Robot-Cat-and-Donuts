@@ -13,7 +13,7 @@ public class CameraFollowCat : MonoBehaviour
        
     void FixedUpdate()
     {
-      Vector3 pos = new Vector3(targetObject.position.x, transform.position.y, transform.position.z);
+      Vector3 pos = new Vector3(targetObject.position.x-1.2f, transform.position.y, transform.position.z);
       transform.position = pos;
     }
 }

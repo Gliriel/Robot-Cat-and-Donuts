@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollowY : MonoBehaviour
+public class CameraOfGame3 : MonoBehaviour
 {
     public Transform targetObject;
 
@@ -13,7 +13,7 @@ public class CameraFollowY : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 pos = new Vector3(transform.position.x, targetObject.position.y-0.7f, transform.position.z);
+        Vector3 pos = new Vector3(transform.position.x, targetObject.position.y + 1.65f, transform.position.z);
         transform.position = pos;
     }
 }
