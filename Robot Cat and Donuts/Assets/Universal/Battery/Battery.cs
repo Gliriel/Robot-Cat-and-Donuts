@@ -8,7 +8,7 @@ public class Battery : MonoBehaviour
     public Image _battery;
     public Sprite[] batteries;
     public int currentBatteryIndex = 0;
-    public int gamesPlayed;
+    public int gamesPlayed = 0;
     
 
     // Start is called before the first frame update

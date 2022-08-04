@@ -34,11 +34,13 @@ public class SceneChanger : MonoBehaviour
         {
             littlePlanet.transform.localRotation = Quaternion.Euler(0, 0, -250);
         }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        _randomScene = Random.Range(3, SceneManager.sceneCountInBuildSettings);
         SceneChanges();
     }
 
@@ -58,7 +60,7 @@ public class SceneChanger : MonoBehaviour
     
     public void LoadRandomScene()
     {
-        _randomScene = Random.Range(3, SceneManager.sceneCountInBuildSettings);
+        
         SceneManager.LoadScene(_randomScene); //_randomScene
     }
     
