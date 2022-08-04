@@ -485,8 +485,9 @@ MonoBehaviour:
   _battery: {fileID: 0}
   littlePlanet: {fileID: 422109633}
   angle: 25
-  speed: 4
+  speed: 0.025
   _randomScene: 0
+  canRotate: 0
 --- !u!4 &1736794759
 Transform:
   m_ObjectHideFlags: 0

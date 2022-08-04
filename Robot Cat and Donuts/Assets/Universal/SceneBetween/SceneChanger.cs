@@ -9,8 +9,9 @@ public class SceneChanger : MonoBehaviour
     public Battery _battery;
     public GameObject littlePlanet;
     public float angle = 25;
-    public int speed = 4;
+    public float speed = 4;
     public int _randomScene;
+    public bool canRotate = false;
 
     private void Awake()
     {
@@ -28,11 +29,12 @@ public class SceneChanger : MonoBehaviour
         _battery = go.GetComponent<Battery>();
         if (_battery.gamesPlayed <= 5)
         {
-            littlePlanet.transform.localRotation = Quaternion.Euler(0, 0, -(angle * (_battery.gamesPlayed * 2)));
+            littlePlanet.transform.localRotation = Quaternion.Euler(0, 0, (angle * ((_battery.gamesPlayed - 1) * 2)));
+            
         }
         else
         {
-            littlePlanet.transform.localRotation = Quaternion.Euler(0, 0, -250);
+            littlePlanet.transform.localRotation = Quaternion.Euler(0, 0, 250);
         }
         
     }
@@ -42,6 +44,10 @@ public class SceneChanger : MonoBehaviour
     {
         _randomScene = Random.Range(3, SceneManager.sceneCountInBuildSettings);
         SceneChanges();
+        if (canRotate == true)
+        {
+            littlePlanet.transform.Rotate(Vector3.forward * speed);
+        }
     }
 
     void SceneChanges()
@@ -49,6 +55,7 @@ public class SceneChanger : MonoBehaviour
         if (_battery.gamesPlayed <= 5)
         {
             StartCoroutine(RandomSceneChange());
+            
         }
         else if (_battery.gamesPlayed >= 6)
         {
@@ -67,8 +74,9 @@ public class SceneChanger : MonoBehaviour
 
     public IEnumerator RandomSceneChange()
     {
-        littlePlanet.transform.Rotate(0, 0, angle * Time.deltaTime);
+        canRotate = true;
         yield return new WaitForSecondsRealtime(2);
+        canRotate = false;
         LoadRandomScene();
     }
 
