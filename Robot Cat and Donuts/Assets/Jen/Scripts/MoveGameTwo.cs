@@ -11,6 +11,7 @@ public class MoveGameTwo : MonoBehaviour
     public Rigidbody2D _rbody;
     public Vector2 _moveInput;
     public bool facingRight = true;
+    public PlayRandomSound _playSound;
 
     private void Awake()
     {
@@ -54,5 +55,12 @@ public class MoveGameTwo : MonoBehaviour
         facingRight = !facingRight;
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Numbers")
+        {
+            _playSound.PlayRandomSoundBite();
+        }
 
+    }
 }

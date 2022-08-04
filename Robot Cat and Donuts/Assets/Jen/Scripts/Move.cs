@@ -12,6 +12,7 @@ public class Move : MonoBehaviour
     public Vector2 _moveInput;
     public bool facingRight = true;
     public WinLose winLose;
+    public PlayRandomSound _playSound;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class Move : MonoBehaviour
     {
         if (other.gameObject.tag == "Sphere")
         {
+            _playSound.PlayRandomSoundBite();
             winLose.win = false;
         }
        

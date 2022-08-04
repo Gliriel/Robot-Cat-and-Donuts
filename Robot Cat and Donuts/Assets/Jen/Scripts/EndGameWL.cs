@@ -9,6 +9,8 @@ public class EndGameWL : WinLose
     {
         base.SetWin(false);
         Time.timeScale = 1f;
+        GameObject go = GameObject.Find("Battery");
+        base.battery = go.GetComponent<Battery>();
     }
 
     // Update is called once per frame
