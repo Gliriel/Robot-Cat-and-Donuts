@@ -5,6 +5,11 @@ using UnityEngine;
 public class LoseCondition2 : MonoBehaviour
 {
     public WinLose winLose;
+    void Start()
+    {
+        GameObject go = GameObject.Find("Battery");
+        base.battery = go.GetComponent<Battery>();
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Enemy")
