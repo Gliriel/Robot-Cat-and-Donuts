@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cat
   - Music
+  - Credits
   layers:
   - Default
   - TransparentFX

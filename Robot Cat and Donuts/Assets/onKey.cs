@@ -41,8 +41,7 @@ public class onKey : MonoBehaviour
                 PEA.SetActive(false);
                 PEB.SetActive(false);
                 break;
-            
+
         }
     }
-    
 }

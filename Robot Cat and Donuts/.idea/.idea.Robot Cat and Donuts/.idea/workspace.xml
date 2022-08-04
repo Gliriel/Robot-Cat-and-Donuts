@@ -5,37 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="385712a6-dc72-4a8b-bf72-cc0221bdaaf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Robot Cat and Donuts/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Robot Cat and Donuts/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Jake/Art/KeyboardcapA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Jake/Art/KeyboardcapA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Jake/Art/KeyboardcapD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Jake/Art/KeyboardcapD.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/onKey.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/onKey.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/CatSpriteMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/CatSpriteMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/EventManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/EventManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/JakeGame1WL.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/JakeGame1WL.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/Loss.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/Loss.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/MoveToPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/MoveToPlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/Rotation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/Rotation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/Spawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/Spawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/StartGame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jake/StartGame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Universal/Music.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Universal/Music.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Universal/NoJoke-JakeColson(Loopable).mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Universal/NoJoke-JakeColson(Loopable).mp3.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Universal/Scenes/Opening_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Universal/Scenes/Opening_Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +68,7 @@
       <workItem from="1658994767782" duration="630000" />
       <workItem from="1658998930931" duration="3288000" />
       <workItem from="1659003510685" duration="23000" />
+      <workItem from="1659600045119" duration="8000" />
     </task>
     <servers />
   </component>

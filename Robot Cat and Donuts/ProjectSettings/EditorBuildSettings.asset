@@ -12,4 +12,6 @@ EditorBuildSettings:
     path: Assets/Jake/Scenes/Jake Game 2.unity
     guid: 25f26786c1d134ce49dae51025490e91
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 85a0e1bcb7dad451cb72621020cabc81, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 6e0764894154b461fbcf48b912983c01, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: d9fd753d564ca484fadd069c570045d4, type: 2}
