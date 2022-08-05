@@ -16,6 +16,11 @@ TagManager:
   - Enemy
   - Destoyer
   - Destroyer
+  tags:
+  - GreenOrb
+  - RedOrb
+  - Bird
+  - Cat
   layers:
   - Default
   - TransparentFX
