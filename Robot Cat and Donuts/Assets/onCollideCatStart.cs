@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class onCollideCatStart : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class onCollideCatStart : MonoBehaviour
         if (collision.gameObject.CompareTag("Cat"))
         {
             Debug.Log("Collision with cat");
+            SceneManager.LoadScene(1);
         }
     }
 }

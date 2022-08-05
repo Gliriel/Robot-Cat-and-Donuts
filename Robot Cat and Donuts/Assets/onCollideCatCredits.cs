@@ -34,8 +34,15 @@ public class onCollideCatCredits : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Cat"))
         {
-            text.enabled = true;
-            Debug.Log("colliding");
+            if (text.enabled != true)
+            {
+                text.enabled = true;
+                Debug.Log("colliding");
+            }
+            else if (text.enabled == true)
+            {
+                text.enabled = false;
+            }
         }
     }
 }

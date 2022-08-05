@@ -7,6 +7,8 @@ public class JakeGame1WL : WinLose
     // Start is called before the first frame update
     void Start()
     {
+        GameObject go = GameObject.Find("Battery");
+        base.battery = go.GetComponent<Battery>();
         base.SetWin(true);
         Time.timeScale = 1;
     }

@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(objectToSpawn, RandomVectorXY() , Quaternion.identity);
+        Instantiate (objectToSpawn, RandomVectorXY() , Quaternion.identity);
     }
     
     Vector3 RandomVectorXY()
