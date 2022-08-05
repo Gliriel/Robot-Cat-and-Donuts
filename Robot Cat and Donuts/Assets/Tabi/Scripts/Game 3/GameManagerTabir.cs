@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerTabi : MonoBehaviour
+public class GameManagerTabir : MonoBehaviour
 {
     public GameObject platformPrefab;
     float xspawn = 10;

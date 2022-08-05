@@ -22,14 +22,14 @@ public class PlayerController2 : MonoBehaviour
     void Update()
     {
         moveX = Input.GetAxis("Horizontal") * moveSpeed;
-        if (moveX < 0)
+        /*if (moveX < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
         if (moveX > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
-        }
+        }*/
     }
 
     private void FixedUpdate()

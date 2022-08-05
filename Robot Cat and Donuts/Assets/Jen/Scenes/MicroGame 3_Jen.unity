@@ -1065,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: gameLength
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.size
@@ -1073,7 +1073,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[1].time
-      value: 4.1561117
+      value: 4.4531393
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
+      propertyPath: animationCurve.m_Curve.Array.data[2].time
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[0].value
@@ -1081,11 +1085,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[1].value
-      value: 2.6541333
+      value: 2.6820722
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[2].value
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
       propertyPath: animationCurve.m_Curve.Array.data[0].inSlope
@@ -1233,6 +1237,8 @@ MonoBehaviour:
   _panel: {fileID: 1556755505}
   win: 0
   _timer: {fileID: 1556755504}
+  battery: {fileID: 0}
+  currentSceneIndex: 0
 --- !u!1 &1559195079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1265,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1559195079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 379d4013997e114469cd01c6521a72c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 071d43cc4056d47419d26c8f87b0e079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1559195081
@@ -1428,8 +1434,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 476353991355215333, guid: b9a2665a647eb004aa42b7e4e43671ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9a2665a647eb004aa42b7e4e43671ff, type: 3}
+--- !u!1 &1825636843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 476353991355215334, guid: b9a2665a647eb004aa42b7e4e43671ff, type: 3}
+  m_PrefabInstance: {fileID: 1825636842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1825636844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825636843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e516e41bd926adb4f8abd58555c9a34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  _rbody: {fileID: 0}
+  _moveInput: {x: 0, y: 0}
+  facingRight: 1
+  winLose: {fileID: 1556755508}
+  _playSound: {fileID: 865200342}
 --- !u!1 &1998308133
 GameObject:
   m_ObjectHideFlags: 0

@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9b0d4e30216944095be7a2a1db011f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.3
+  delay: 0.35
   numbers:
   - {fileID: 7254343195029790876, guid: 14071da7230ed3a4b95a31c3b56f3f13, type: 3}
   - {fileID: 1375463158438460221, guid: 66e83f257d34b204797e9b2aba8998a9, type: 3}
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 709150396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 379d4013997e114469cd01c6521a72c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 071d43cc4056d47419d26c8f87b0e079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &709150398
@@ -1931,6 +1931,8 @@ MonoBehaviour:
   _panel: {fileID: 2075746179}
   win: 0
   _timer: {fileID: 1632017736}
+  battery: {fileID: 0}
+  currentSceneIndex: 0
   gameTwoAddValue: {fileID: 1244697404}
 --- !u!1 &1641608761
 GameObject:

@@ -12,6 +12,7 @@ public class WinLose : MonoBehaviour
     public bool win;
     public Timer _timer;
     public Battery battery;
+    public int currentSceneIndex;
 
     
 
@@ -52,11 +53,19 @@ public class WinLose : MonoBehaviour
     public IEnumerator WinState()
     {
         _panel.SetActive(enabled);
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         winLoseText.text = new string("YOU WIN");
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(2f);
-        battery.PlayedAGame();
-        SceneManager.LoadScene(1);
+        if (currentSceneIndex == 2)
+        {
+            StartCoroutine(GameEnding());
+        }
+        else
+        {
+            battery.PlayedAGame();
+            SceneManager.LoadScene(1);
+        }
     }
 
     public IEnumerator LoseState()
@@ -85,10 +94,22 @@ public class WinLose : MonoBehaviour
     {
         winLoseText.text = new string("GAME OVER");
         yield return new WaitForSecondsRealtime(1f);
+        winLoseText.text = new string("TRY AGAIN");
+        yield return new WaitForSecondsRealtime(1f);
         Destroy(GameObject.FindGameObjectWithTag("Batt"));
         SceneManager.LoadScene(0);
     
 
+    }
+
+    public IEnumerator GameEnding()
+    {
+        winLoseText.text = new string("YOU GOT THE DONUT");
+        yield return new WaitForSecondsRealtime(1f);
+        winLoseText.text = new string("THANKS FOR PLAYING");
+        yield return new WaitForSecondsRealtime(1f);
+        Destroy(GameObject.FindGameObjectWithTag("Batt"));
+        SceneManager.LoadScene(0);
     }
 
 }

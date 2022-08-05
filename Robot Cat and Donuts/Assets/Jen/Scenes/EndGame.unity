@@ -826,6 +826,8 @@ MonoBehaviour:
   _panel: {fileID: 1909400653}
   win: 0
   _timer: {fileID: 1591552411}
+  battery: {fileID: 0}
+  currentSceneIndex: 0
 --- !u!114 &1591552411 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
@@ -863,7 +865,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1610616683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 379d4013997e114469cd01c6521a72c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 071d43cc4056d47419d26c8f87b0e079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1610616685

@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77428989de263b042b8051e2370d5e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.08
+  delay: 0.4
   sphere: {fileID: 3074409333659559782, guid: d677fbbc616f1b049bb05bfedb262d47, type: 3}
 --- !u!4 &331585497
 Transform:
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1074732671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 379d4013997e114469cd01c6521a72c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 071d43cc4056d47419d26c8f87b0e079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1074732673
@@ -645,6 +645,7 @@ MonoBehaviour:
   win: 0
   _timer: {fileID: 1123764492}
   battery: {fileID: 0}
+  currentSceneIndex: 0
 --- !u!114 &1123764492 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7757368251399899074, guid: cdae92670e488264999bbcf54ee6fa6d, type: 3}
@@ -780,10 +781,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920800, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -933,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e516e41bd926adb4f8abd58555c9a34f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 8
   _rbody: {fileID: 0}
   _moveInput: {x: 0, y: 0}
   facingRight: 1
