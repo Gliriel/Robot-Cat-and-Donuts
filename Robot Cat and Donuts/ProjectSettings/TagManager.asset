@@ -6,6 +6,16 @@ TagManager:
   tags:
   - Cat
   - Music
+  - Credits
+  tags:
+  - Sphere
+  - Destroyer
+  - Numbers
+  tags:
+  - Platform
+  - Enemy
+  - Destoyer
+  - Destroyer
   layers:
   - Default
   - TransparentFX
