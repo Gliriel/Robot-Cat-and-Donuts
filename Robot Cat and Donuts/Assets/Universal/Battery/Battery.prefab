@@ -114,13 +114,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43607a09b4780f545aa219dccf121c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _battery: {fileID: 0}
+  _battery: {fileID: 5388764779269915914}
   batteries:
   - {fileID: 1339112002, guid: a92772df5b3222a489baad44fb4d8cb7, type: 3}
   - {fileID: 126973326, guid: a92772df5b3222a489baad44fb4d8cb7, type: 3}
   - {fileID: -541168173, guid: a92772df5b3222a489baad44fb4d8cb7, type: 3}
   - {fileID: 1202522365, guid: a92772df5b3222a489baad44fb4d8cb7, type: 3}
   currentBatteryIndex: 0
+  gamesPlayed: 0
 --- !u!1 &5388764779269916023
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 130, y: 0}
+  m_SizeDelta: {x: 100, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5388764779269915915
 CanvasRenderer:

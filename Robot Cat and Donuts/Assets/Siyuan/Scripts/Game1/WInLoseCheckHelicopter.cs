@@ -10,6 +10,9 @@ public class WInLoseCheckHelicopter : WinLose
     private void Start()
     {
         bird_script = GameObject.FindGameObjectWithTag("Cat").GetComponent<BirdAccident>();
+        GameObject go = GameObject.Find("Battery");
+        base.battery = go.GetComponent<Battery>();
+        Time.timeScale = 1f;
     }
 
     private void Update()

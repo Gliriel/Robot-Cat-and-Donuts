@@ -21,14 +21,14 @@ public class DodgeInAir3 : MonoBehaviour
 
         if (keyboard.aKey.IsPressed())
         {
-            transform.Translate(Vector3.right * DodgeSpeed);
+            transform.Translate(Vector3.right * DodgeSpeed * Time.deltaTime);
 
             this.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
 
         if (keyboard.dKey.IsPressed())
         {
-            transform.Translate(Vector3.right * DodgeSpeed);
+            transform.Translate(Vector3.right * DodgeSpeed * Time.deltaTime);
             this.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 

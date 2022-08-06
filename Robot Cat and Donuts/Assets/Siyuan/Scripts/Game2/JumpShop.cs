@@ -14,7 +14,7 @@ public class JumpShop : MonoBehaviour
         
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         var keyboard = Keyboard.current;
