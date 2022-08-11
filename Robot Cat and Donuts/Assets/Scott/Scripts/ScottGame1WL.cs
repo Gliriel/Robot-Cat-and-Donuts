@@ -19,7 +19,7 @@ public class ScottGame1WL : WinLose
     {
         if (_timer.stopTimer != false)
         {
-            if (imageRotate.painting.transform.localEulerAngles.z <= 2f || imageRotate.painting.transform.localEulerAngles.z >= 358f)
+            if (imageRotate.painting.transform.localEulerAngles.z <= 3f || imageRotate.painting.transform.localEulerAngles.z >= 357f)
             {
                 base.Win();
             }

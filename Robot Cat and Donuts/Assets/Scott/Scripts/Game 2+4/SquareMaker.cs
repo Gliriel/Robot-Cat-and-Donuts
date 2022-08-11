@@ -11,7 +11,7 @@ public class SquareMaker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randNum = Random.Range(8, 16); // this will return a number between 5 and 15 
+        randNum = Random.Range(7, 14); // this will return a number between 5 and 15 
 
         for (var i = 0; i < randNum; i++)
         {

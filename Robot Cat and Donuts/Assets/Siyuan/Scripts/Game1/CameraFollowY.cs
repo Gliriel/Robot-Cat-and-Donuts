@@ -13,7 +13,7 @@ public class CameraFollowY : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 pos = new Vector3(transform.position.x, targetObject.position.y-0.7f, transform.position.z);
+        Vector3 pos = new Vector3(transform.position.x, targetObject.position.y-0.75f, transform.position.z);
         transform.position = pos;
     }
 }

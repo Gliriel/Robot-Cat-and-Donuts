@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class onCollideCatCredits : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI credits;
+    public TextMeshProUGUI controls;
     public Sprite keyUp;
     public Sprite keyDown;
     private Image img;
@@ -34,14 +35,16 @@ public class onCollideCatCredits : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Cat"))
         {
-            if (text.enabled != true)
+            if (credits.enabled != true)
             {
-                text.enabled = true;
+                controls.enabled = false;
+                credits.enabled = true;
                 Debug.Log("colliding");
             }
-            else if (text.enabled == true)
+            else if (credits.enabled == true)
             {
-                text.enabled = false;
+                credits.enabled = false;
+                controls.enabled = true;
             }
         }
     }
