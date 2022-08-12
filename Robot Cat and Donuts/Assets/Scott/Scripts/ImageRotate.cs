@@ -30,17 +30,17 @@ public class ImageRotate : MonoBehaviour
             if (keyboard.aKey.IsPressed())
             {
                 transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
-                audioSource.volume = 1f;
+                
             }
             else if (keyboard.dKey.IsPressed())
             {
                 transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-                audioSource.volume = 1f;
+                
             }
             else
             {
                 transform.Rotate(Vector3.forward * (speed / 2000));
-                audioSource.volume = 0f;
+              
             }
         }
     }
