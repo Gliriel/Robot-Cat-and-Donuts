@@ -10,12 +10,16 @@ public class DonutEaten : MonoBehaviour
     int currentImageIndex = 0;
     public WinLose winLose;
     SpriteRenderer _sr;
+    public AudioSource audioSource;
+    public AudioSource victorySource;
+    private bool hasPlayedOnce;
 
     private void Start()
     {
         _sr = GetComponent<SpriteRenderer>();
         _donut = donuts[currentImageIndex];
         _sr.sprite = _donut;
+        hasPlayedOnce = false;
     }
 
     private void Update()
@@ -23,6 +27,12 @@ public class DonutEaten : MonoBehaviour
         if (currentImageIndex >= donuts.Length)
         {
             winLose.win = true;
+            if(!hasPlayedOnce)
+            {
+                hasPlayedOnce = true;
+                victorySource.Play();
+            }
+            
         }
     }
     public void EatDonut()
@@ -31,6 +41,7 @@ public class DonutEaten : MonoBehaviour
         currentImageIndex++;
         _donut = donuts[currentImageIndex];
         _sr.sprite = _donut;
+        audioSource.Play();
 
         
     }
