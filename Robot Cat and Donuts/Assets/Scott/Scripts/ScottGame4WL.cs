@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScottGame4WL : WinLose
 {
-    
 
+    public AudioSource audioSource;
     void Start()
     {
 
@@ -22,6 +22,7 @@ public class ScottGame4WL : WinLose
         if (base.win == true)
         {
             base.Win();
+            audioSource.Pause();
         }
         base.CheckWin();
     }

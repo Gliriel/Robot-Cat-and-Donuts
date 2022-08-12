@@ -11,6 +11,7 @@ public class ImageRotate : MonoBehaviour
     public int currentPaintingIndex;
     public float speed = 80;
     public Timer _timer;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -29,14 +30,17 @@ public class ImageRotate : MonoBehaviour
             if (keyboard.aKey.IsPressed())
             {
                 transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
+                audioSource.volume = 1f;
             }
             else if (keyboard.dKey.IsPressed())
             {
                 transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+                audioSource.volume = 1f;
             }
             else
             {
                 transform.Rotate(Vector3.forward * (speed / 2000));
+                audioSource.volume = 0f;
             }
         }
     }

@@ -7,20 +7,7 @@ TagManager:
   - Cat
   - Music
   - Credits
-  tags:
-  - Sphere
-  - Destroyer
-  - Numbers
-  tags:
-  - Platform
-  - Enemy
-  - Destoyer
-  - Destroyer
-  tags:
-  - GreenOrb
-  - RedOrb
-  - Bird
-  - Cat
+  - Sauce
   layers:
   - Default
   - TransparentFX
