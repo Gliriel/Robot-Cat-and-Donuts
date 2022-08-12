@@ -9,6 +9,7 @@ public class TG3ScrollImage : MonoBehaviour
     public Image _imageA;
     public Sprite[] imageAs;
     public int currentImageAIndex;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class TG3ScrollImage : MonoBehaviour
                 currentImageAIndex = imageAs.Length;
             }
             _imageA.sprite = imageAs[currentImageAIndex];
+            playSound();
         }
         if (keyboard.dKey.wasPressedThisFrame)
         {
@@ -38,6 +40,12 @@ public class TG3ScrollImage : MonoBehaviour
                 currentImageAIndex = 0;
             }
             _imageA.sprite = imageAs[currentImageAIndex];
+            playSound();
         }
+    }
+
+    void playSound()
+    {
+        audioSource.Play();
     }
 }
