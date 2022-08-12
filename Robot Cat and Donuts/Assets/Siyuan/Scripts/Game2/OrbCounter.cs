@@ -6,12 +6,14 @@ public class OrbCounter : MonoBehaviour
 {
     public int valueGreen = 10;
     public int valueRed = 1;
+    public AudioSource audioSource;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "GreenOrb")
         {
             GetComponent<SiyuanG2AddValue>().AddValueShop(valueGreen);
             Destroy(collision.gameObject);
+            audioSource.Play();
 
         }
 
@@ -19,6 +21,7 @@ public class OrbCounter : MonoBehaviour
         {
             GetComponent<SiyuanG2AddValue>().AddValueShop(valueRed);
             Destroy(collision.gameObject);
+            audioSource.Play();
 
         }
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BirdAccident : MonoBehaviour
 {
     public bool birdG1 = false;
+    public AudioSource audioSource;
     void Start()
     {
         
@@ -15,6 +16,7 @@ public class BirdAccident : MonoBehaviour
         if (collision.gameObject.tag == "Bird")
         {
             birdG1 = true;
+            audioSource.Play();
             
         }
     }
