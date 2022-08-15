@@ -6,12 +6,20 @@ using UnityEngine.InputSystem;
 public class ResetGame : MonoBehaviour
 {
     
+
+    void Start()
+    {
+        
+    }
+
     private void Update()
     {
         var keyboard = Keyboard.current;
         // Quick and dirty one-liner to reload the scene (eg use at the end of the battle)
         if (keyboard.escapeKey.wasPressedThisFrame)
         {
+            Destroy(GameObject.FindGameObjectWithTag("List"));
+            Destroy(GameObject.FindGameObjectWithTag("Batt"));
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
         

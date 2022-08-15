@@ -57,14 +57,14 @@ public class WinLose : MonoBehaviour
         winLoseText.text = new string("YOU WIN");
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(2f);
-        if (currentSceneIndex == 2)
+        if (currentSceneIndex == 3)
         {
             StartCoroutine(GameEnding());
         }
         else
         {
             battery.PlayedAGame();
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -83,7 +83,7 @@ public class WinLose : MonoBehaviour
         else
         {
             yield return new WaitForSecondsRealtime(1f);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         
 
@@ -96,6 +96,7 @@ public class WinLose : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         winLoseText.text = new string("TRY AGAIN");
         yield return new WaitForSecondsRealtime(1f);
+        Destroy(GameObject.FindGameObjectWithTag("List"));
         Destroy(GameObject.FindGameObjectWithTag("Batt"));
         SceneManager.LoadScene(0);
     
@@ -108,6 +109,7 @@ public class WinLose : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         winLoseText.text = new string("THANKS FOR PLAYING");
         yield return new WaitForSecondsRealtime(1f);
+        Destroy(GameObject.FindGameObjectWithTag("List"));
         Destroy(GameObject.FindGameObjectWithTag("Batt"));
         SceneManager.LoadScene(0);
     }
