@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class JustKidding : MonoBehaviour
 {
@@ -26,7 +27,11 @@ public class JustKidding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var keyboard = Keyboard.current;
+        if (keyboard.dKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     public IEnumerator JK()
@@ -42,19 +47,19 @@ public class JustKidding : MonoBehaviour
     {
         _storyText.enabled = false;
         _justKidding.enabled = false;
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(0.5f);
         Text1.enabled = true;
         Meow.Play();
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(0.8f);
         Text2.enabled = true;
         Meow.Play();
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(0.8f);
         Text3.enabled = true;
         Meow.Play();
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(0.8f);
         Text4.enabled = true;
         Meow.Play();
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(0.8f);
         Text5.enabled = true;
         Meow.Play();
         yield return new WaitForSecondsRealtime(1);
