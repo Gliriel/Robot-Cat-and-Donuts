@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3830693, g: 0.39474276, b: 0.37960407, a: 1}
+  m_IndirectSpecularColor: {r: 0.38306972, g: 0.39474335, b: 0.37960455, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1157,7 +1157,7 @@ SphereCollider:
   m_GameObject: {fileID: 836314700}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -1466,6 +1466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1783565886}
+  SmoothTime: 0.15
 --- !u!1 &1063260301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,7 +2641,7 @@ SphereCollider:
   m_GameObject: {fileID: 1783494938}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -2749,7 +2750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CatCube: {fileID: 1783565882}
-  forceAmount: 0.65
+  forceAmount: 0.07
 --- !u!54 &1783565882
 Rigidbody:
   m_ObjectHideFlags: 0

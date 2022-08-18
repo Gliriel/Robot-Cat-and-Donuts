@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Universal/Scenes/Opening_Scene.unity
     guid: 019c912f42c176541aa1a58335d9ef5f
   - enabled: 1
+    path: Assets/Universal/SceneBetween/StoryScene.unity
+    guid: f7354e9ccaa88f44899aa87c3d5d5cfe
+  - enabled: 1
     path: Assets/Universal/SceneBetween/SceneBetween.unity
     guid: 722790e8f39231448a40b5c80118e2eb
   - enabled: 1
