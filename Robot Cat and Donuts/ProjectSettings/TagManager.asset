@@ -8,6 +8,10 @@ TagManager:
   - Music
   - Credits
   - Sauce
+  - Enemy
+  - List
+  - Batt
+  - New tag
   layers:
   - Default
   - TransparentFX

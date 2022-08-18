@@ -49,7 +49,7 @@ public class SceneChanger : MonoBehaviour
             littlePlanet.transform.localRotation = Quaternion.Euler(0, 0, 250);
         }
         newNumber = false;
-        float pow = Mathf.Pow((8 - _battery.gamesPlayed), (8 - _battery.gamesPlayed));
+        float pow = Mathf.Pow((9 - _battery.gamesPlayed), (9 - _battery.gamesPlayed));
         distance.text = new string(pow + " metres to the DONUT!");
     }
 
