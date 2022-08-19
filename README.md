@@ -24,6 +24,6 @@ Siyuan Shen - Art, Programming
 
 Tabi (Kailis Bellanger) - Lead Art, Animation, Programming
 
-Jake Colson - Lead Audio, Menu UI, Programming, Github fixer upper, WebGL + MacOS build
+Jake Colson (IntrepidShape) - Lead Audio, Menu UI, Programming, Github fixer upper, WebGL + MacOS build
 
 Jeff the Cat - Voice Acting
