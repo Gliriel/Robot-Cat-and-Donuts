@@ -18,11 +18,11 @@ Links to where you can get it!
 ## Credits
 Jenny Murray - Document Control, End Game, Art, Audio, Programming
 
-Scott Murray - Scene Changes, Scene Between, Lead Programming
+Scott Murray - Scene Changes, Scene Between, Lead Programming, Windows Build
 
 Siyuan Shen - Art, Programming
 
-Tabi (Kailis Bellanger) - Lead Art, Animation, Programming
+Tabi (Kailis Bellanger) - Lead Art, Animation, Programming, Github fixer upper, WebGL + MacOS build
 
 Jake Colson - Lead Audio, Menu UI, Programming
 
