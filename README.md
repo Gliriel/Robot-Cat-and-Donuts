@@ -22,8 +22,8 @@ Scott Murray - Scene Changes, Scene Between, Lead Programming, Windows Build
 
 Siyuan Shen - Art, Programming
 
-Tabi (Kailis Bellanger) - Lead Art, Animation, Programming, Github fixer upper, WebGL + MacOS build
+Tabi (Kailis Bellanger) - Lead Art, Animation, Programming
 
-Jake Colson - Lead Audio, Menu UI, Programming
+Jake Colson - Lead Audio, Menu UI, Programming, Github fixer upper, WebGL + MacOS build
 
 Jeff the Cat - Voice Acting
